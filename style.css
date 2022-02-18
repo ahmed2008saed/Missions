@@ -1,0 +1,75 @@
+body {
+    margin: 0px;
+    padding: 10px;
+    font-family: Tahoma;
+    background-color: azure;
+    max-width: 400px;
+    max-height: 500px;
+    overflow: scroll;
+    text-transform: capitalize;
+}
+
+.contant {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    /*,*/z-index: 2;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {color: #555;}
+
+#input-el {
+    width: 100%;
+    padding: 10px 10px 10px 10px;
+    box-sizing: border-box;
+    border: 1px solid green;
+    color: green;
+    text-align: center;
+}
+
+#input-btn {
+    background-color: green;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+#all-btn {
+    background-color: gold;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+}
+
+#delete-btn {
+    background-color: #ce2a2a;
+    color: white;
+    font-weight: bolder;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ce2a2a;
+}
+
+#store-el {
+    width: 100%;
+    padding: 0;
+    color: #00f;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 1px solid #111;
+    background-color: #f0eddf;
+    list-style-type: none;
+    margin-top: 60px;
+    font-size: 30px;
+}
