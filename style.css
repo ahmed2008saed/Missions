@@ -14,7 +14,8 @@ body {
     left: 50%;
     top: 0;
     transform: translateX(-50%);
-    /*,*/z-index: 2;
+    /*,*/
+    z-index: 2;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
@@ -23,11 +24,39 @@ body {
     margin-bottom: 30px;
 }
 
-h1 {color: #555;}
+@media (min-width: 768px) {
+    .contant {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .contant {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .contant {
+        width: 1170px;
+    }
+}
+
+
+h1 {
+    color: #555;
+    user-select: none;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 25.5px;
+    }
+}
 
 #input-el {
     width: 100%;
-    padding: 10px 10px 10px 10px;
+    padding: 10px;
     box-sizing: border-box;
     border: 1px solid green;
     color: green;
@@ -38,7 +67,7 @@ h1 {color: #555;}
     background-color: green;
     color: white;
     font-weight: bolder;
-    padding: 10px;
+    padding: 11px;
     margin-top: 10px;
     border: none;
 }
@@ -47,9 +76,10 @@ h1 {color: #555;}
     background-color: gold;
     color: white;
     font-weight: bolder;
-    padding: 10px;
+    padding: 11px;
     margin-top: 10px;
     border: none;
+    display: none;
 }
 
 #delete-btn {
@@ -64,7 +94,6 @@ h1 {color: #555;}
 #store-el {
     width: 100%;
     padding: 0;
-    color: #00f;
     margin-top: 10px;
     box-sizing: border-box;
     border: 1px solid #111;
@@ -72,4 +101,19 @@ h1 {color: #555;}
     list-style-type: none;
     margin-top: 60px;
     font-size: 30px;
+}
+
+#store-el li {
+    color: #00f;
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-right: 1px solid #111;
+    border-left: 1px solid #111;
+}
+
+@media (max-width: 767px) {
+    #store-el li {
+        border: none;
+    }
 }
